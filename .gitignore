@@ -1,0 +1,19 @@
+# Ambiente virtual
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Variáveis ambiente
+.env
+
+# Credenciais
+credentials.json
+
+# Áudios
+audios/
+
+# PyCharm
+.idea/

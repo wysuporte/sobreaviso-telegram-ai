@@ -1,0 +1,17 @@
+Analise o áudio enviado e extraia:
+
+- data
+- hora_inicio
+- hora_fim
+- duracao_minutos
+- descricao
+- telefone
+- setor
+- quem_ligou
+
+REGRAS:
+- Retorne SOMENTE JSON válido
+- Não invente informações
+- Se não souber algum campo usar null
+- Se houver duração informada preencher duracao_minutos
+- A descrição deve ser resumo expandido do problema relatado (Sistemas Tasy, SGU, SGU Suite, Usuario de Rede, Pabx, PEP, PACS, Autorizador, Telefonia)
