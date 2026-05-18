@@ -1,7 +1,13 @@
+import json
+import tempfile
 import gspread
-from oauth2client.service_account import ServiceAccountCredentials
+
+from oauth2client.service_account import (
+    ServiceAccountCredentials
+)
+
 from app.config import (
-    GOOGLE_CREDENTIALS_FILE,
+    GOOGLE_CREDENTIALS_JSON,
     GOOGLE_SHEETS_NAME
 )
 
@@ -10,8 +16,22 @@ scope = [
     "https://www.googleapis.com/auth/drive"
 ]
 
+credentials_dict = json.loads(
+    GOOGLE_CREDENTIALS_JSON
+)
+
+with tempfile.NamedTemporaryFile(
+    mode="w",
+    delete=False,
+    suffix=".json"
+) as temp_file:
+
+    json.dump(credentials_dict, temp_file)
+
+    temp_credentials_path = temp_file.name
+
 creds = ServiceAccountCredentials.from_json_keyfile_name(
-    GOOGLE_CREDENTIALS_FILE,
+    temp_credentials_path,
     scope
 )
 
