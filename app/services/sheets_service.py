@@ -50,7 +50,7 @@ def salvar_atendimento(atendimento):
         atendimento.get("hora_fim"),
         atendimento.get("duracao_minutos"),
         atendimento.get("descricao"),
-        atendimento.get("telefone"),
         atendimento.get("setor"),
-        atendimento.get("quem_ligou")
+        atendimento.get("quem_ligou"),
+        atendimento.get("telefone")
     ])

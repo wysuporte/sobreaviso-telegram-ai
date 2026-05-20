@@ -7,6 +7,6 @@ class Atendimento(BaseModel):
     hora_fim: Optional[str] = None
     duracao_minutos: Optional[int] = None
     descricao: Optional[str] = None
-    telefone: Optional[str] = None
     setor: Optional[str] = None
     quem_ligou: Optional[str] = None
+    telefone: Optional[str] = None
