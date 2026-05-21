@@ -58,6 +58,11 @@ def salvar_atendimento(atendimento):
         atendimento.get("descricao"),
         atendimento.get("setor"),
         atendimento.get("quem_ligou"),
-        atendimento.get("telefone")
+        atendimento.get("telefone"),
+        "Sim",
+        "Sim",
+        "Sim",
+        "Não",
+        "Não"
     ])
 
