@@ -18,4 +18,4 @@ REGRAS:
 - Se não souber algum campo usar null
 - Se houver duração informada preencher duracao_minutos
 - A descrição deve ser resumo expandido do problema relatado (Sistemas Tasy, SGU, SGU Suite, Usuario de Rede, Pabx, PEP, PACS, Autorizador, Telefonia)
-- Setor, Unidade ou Estabelecimento (SAUPED, SAU ou SAU Adulto, ESB, CDU, Central, CEU, Telemedicina)
+- Setor, Unidade ou Estabelecimento será os seguintes texto abreviados (SAUPED, SAU ou SAU Adulto, ESB, CDU, Central, CEU, Telemedicina)
